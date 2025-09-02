@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Japjot Singh | Senior Data Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -22,74 +24,79 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle">🌙</button>
+      <button id="theme-toggle"><i class="fas fa-moon"></i></button>
     </nav>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-text">
-      <img src="assets/profile.jpg" alt="Japjot Singh" class="profile-img">
-      <h2>Senior Data Engineer</h2>
-      <p>Building fault-tolerant, low-latency pipelines and governed data platforms across AWS, Azure & GCP</p>
-      <a href="assets/resume.pdf" class="btn" target="_blank">Download Resume</a>
+      <img src="assets/profile.jpg" alt="Japjot Singh" class="profile-img" data-aos="zoom-in">
+      <h2>Hello, I'm <span class="highlight">Japjot Singh</span></h2>
+      <h3><span id="typed"></span></h3>
+      <div class="hero-buttons">
+        <a href="assets/resume.pdf" class="btn" target="_blank">Download Resume</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
     </div>
   </section>
 
   <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I am a Senior Data Engineer based in New York with extensive experience designing and scaling ETL/ELT pipelines, 
-      real-time streaming systems, and cloud-native architectures. Proven record of reducing pipeline failures by 40%, 
-      cutting infrastructure setup time by 80%, and delivering 25% cost savings in enterprise cloud environments. 
-      Adept at delivering governed, high-quality data for analytics, BI, and ML workloads.
+    <p data-aos="fade-up">
+      I am a Senior Data Engineer based in New York with expertise in building fault-tolerant ETL/ELT pipelines,
+      real-time streaming systems, and cloud-native architectures across AWS, Azure, and GCP. I have reduced
+      pipeline failures by 40%, cut infrastructure setup time by 80%, and delivered 25% cloud cost savings while
+      enabling analytics, BI, and ML workloads at scale.
     </p>
   </section>
 
   <!-- Skills -->
   <section id="skills">
-    <h2>Technical Skills</h2>
+    <h2>Skills</h2>
     <div class="skills-grid">
-      <div><strong>Programming:</strong> Python, SQL, Scala, Java, R, Bash</div>
-      <div><strong>Big Data:</strong> Spark, Kafka, Hadoop, Flink, Databricks</div>
-      <div><strong>Cloud:</strong> AWS (Glue, Redshift, EMR, Kinesis), Azure (ADF, Synapse, Purview), GCP (BigQuery, Dataflow)</div>
-      <div><strong>Infrastructure:</strong> Airflow, DBT, Terraform, GitHub Actions, Docker, CloudWatch</div>
-      <div><strong>Analytics:</strong> Tableau, Power BI, KPI Dashboards, A/B Testing, Anomaly Detection</div>
+      <div class="skill-card" data-aos="flip-left"><i class="fa fa-code"></i> Python, SQL, Scala, Java, R, Bash</div>
+      <div class="skill-card" data-aos="flip-left"><i class="fa fa-database"></i> Spark, Kafka, Hadoop, Flink, Databricks</div>
+      <div class="skill-card" data-aos="flip-left"><i class="fa fa-cloud"></i> AWS (Glue, Redshift, EMR, Kinesis)</div>
+      <div class="skill-card" data-aos="flip-left"><i class="fa fa-cloud"></i> Azure (ADF, Synapse, Purview)</div>
+      <div class="skill-card" data-aos="flip-left"><i class="fa fa-cloud"></i> GCP (BigQuery, Dataflow)</div>
+      <div class="skill-card" data-aos="flip-left"><i class="fa fa-cogs"></i> Airflow, DBT, Terraform, GitHub Actions, Docker</div>
+      <div class="skill-card" data-aos="flip-left"><i class="fa fa-chart-line"></i> Tableau, Power BI, A/B Testing, KPI Dashboards</div>
     </div>
   </section>
 
   <!-- Experience -->
   <section id="experience">
     <h2>Experience</h2>
-    <div class="exp-card">
+    <div class="exp-card" data-aos="fade-up">
       <h3>Senior Data Engineer @ Computational Group</h3>
       <span>Sept 2023 – Present | New York</span>
       <ul>
-        <li>Built scalable ETL pipelines with Python, SQL, Spark → reduced failures by 40%.</li>
-        <li>Automated AWS Glue, Step Functions & Lambda → 99% reliable orchestration.</li>
-        <li>Provisioned infra with Terraform & Boto3 → 80% faster setup.</li>
-        <li>Optimized Snowflake clustering → 35% faster BI dashboards.</li>
+        <li>Built ETL pipelines with Spark & SQL → failures reduced by 40%.</li>
+        <li>Automated Glue + Lambda workflows → 99% reliable orchestration.</li>
+        <li>Provisioned infra with Terraform → setup time reduced by 80%.</li>
+        <li>Optimized Snowflake clustering → BI dashboards 35% faster.</li>
       </ul>
     </div>
 
-    <div class="exp-card">
+    <div class="exp-card" data-aos="fade-up">
       <h3>Data Engineer @ ZS Associates</h3>
       <span>Jan 2022 – Aug 2023 | New Jersey</span>
       <ul>
         <li>Built ADF + Synapse pipelines → 30% lower latency at TB scale.</li>
-        <li>Created reusable Terraform modules + GitHub Actions → 80% faster CI/CD.</li>
-        <li>Implemented DBT testing & Purview → governed pipelines, SOC-2 aligned.</li>
+        <li>Implemented DBT testing + Purview → governed pipelines, SOC-2 aligned.</li>
+        <li>Terraform modules + CI/CD → 80% faster environment setup.</li>
       </ul>
     </div>
 
-    <div class="exp-card">
+    <div class="exp-card" data-aos="fade-up">
       <h3>Data Engineer @ Bain & Company</h3>
       <span>Jul 2020 – Dec 2021 | New York</span>
       <ul>
-        <li>Developed Spark anomaly detection pipelines → +35% accuracy.</li>
-        <li>Automated AWS infra provisioning → 30% cost reduction.</li>
-        <li>Optimized Snowflake star schema → 20% fewer SLA breaches.</li>
+        <li>Spark anomaly detection pipelines → +35% accuracy in fraud analytics.</li>
+        <li>Automated AWS infra with Terraform → 30% cost savings.</li>
+        <li>Optimized Snowflake models → reduced SLA breaches by 20%.</li>
       </ul>
     </div>
   </section>
@@ -98,17 +105,17 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="proj-grid">
-      <div class="proj-card">
+      <div class="proj-card" data-aos="zoom-in">
         <h3>Real-Time Streaming</h3>
-        <p>Kafka + Spark Streaming pipelines for financial transactions with anomaly detection (sub-minute latency).</p>
+        <p>Kafka + Spark pipelines for financial transactions with anomaly detection, enabling sub-minute ingestion and fraud prevention.</p>
       </div>
-      <div class="proj-card">
+      <div class="proj-card" data-aos="zoom-in">
         <h3>Enterprise DBT Framework</h3>
-        <p>DBT pipelines with SCD2, lineage & testing across 50+ domains → improved governance & quality.</p>
+        <p>Built DBT pipelines with SCD2, lineage & testing across 50+ domains → governance and data quality improved.</p>
       </div>
-      <div class="proj-card">
+      <div class="proj-card" data-aos="zoom-in">
         <h3>Healthcare Data Warehouse</h3>
-        <p>Snowflake dimensional models for EMR + claims data → dashboards reduced SLA breaches by 20%.</p>
+        <p>Snowflake dimensional models for EMR + claims → dashboards reduced SLA breaches by 20%.</p>
       </div>
     </div>
   </section>
@@ -116,7 +123,7 @@
   <!-- Certifications -->
   <section id="certifications">
     <h2>Certifications</h2>
-    <ul>
+    <ul data-aos="fade-up">
       <li>AWS Certified Data Analytics – Specialty</li>
       <li>Google Cloud Professional Data Engineer</li>
       <li>Microsoft Certified: Azure Data Engineer Associate</li>
@@ -128,7 +135,7 @@
   <!-- Education -->
   <section id="education">
     <h2>Education</h2>
-    <p>Masters in Computer Science, New York University — Dec 2024</p>
+    <p data-aos="fade-up">M.S. in Computer Science, New York University — Dec 2024</p>
   </section>
 
   <!-- Contact -->
@@ -138,13 +145,17 @@
     <p>📧 <a href="mailto:jaysingh2883@gmail.com">jaysingh2883@gmail.com</a></p>
     <p>☎️ 516-435-7308</p>
     <div class="social-links">
-      <a href="https://github.com/japjot" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/japjot" target="_blank">LinkedIn</a>
+      <a href="https://github.com/japjot" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/japjot" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
 
   <footer>
     <p>© 2025 Japjot Singh — Senior Data Engineer Portfolio</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
 </body>
 </html>
