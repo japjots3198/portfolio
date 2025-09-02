@@ -18,6 +18,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -25,11 +26,12 @@
     </nav>
   </header>
 
-  <!-- Home -->
+  <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-text">
+      <img src="assets/profile.jpg" alt="Japjot Singh" class="profile-img">
       <h2>Senior Data Engineer</h2>
-      <p>Designing scalable ETL/ELT pipelines, cloud-native data platforms, and real-time streaming systems across AWS, Azure, and GCP.</p>
+      <p>Building fault-tolerant, low-latency pipelines and governed data platforms across AWS, Azure & GCP</p>
       <a href="assets/resume.pdf" class="btn" target="_blank">Download Resume</a>
     </div>
   </section>
@@ -38,7 +40,10 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a Senior Data Engineer based in New York with extensive experience delivering governed, high-quality data pipelines and architectures for analytics, BI, and ML workloads. I have a proven record of reducing pipeline failures by 40%, cutting infrastructure setup time by 80%, and achieving 25% cost savings in cloud environments.
+      I am a Senior Data Engineer based in New York with extensive experience designing and scaling ETL/ELT pipelines, 
+      real-time streaming systems, and cloud-native architectures. Proven record of reducing pipeline failures by 40%, 
+      cutting infrastructure setup time by 80%, and delivering 25% cost savings in enterprise cloud environments. 
+      Adept at delivering governed, high-quality data for analytics, BI, and ML workloads.
     </p>
   </section>
 
@@ -49,8 +54,8 @@
       <div><strong>Programming:</strong> Python, SQL, Scala, Java, R, Bash</div>
       <div><strong>Big Data:</strong> Spark, Kafka, Hadoop, Flink, Databricks</div>
       <div><strong>Cloud:</strong> AWS (Glue, Redshift, EMR, Kinesis), Azure (ADF, Synapse, Purview), GCP (BigQuery, Dataflow)</div>
-      <div><strong>Infrastructure:</strong> Airflow, DBT, Terraform, GitHub Actions, Docker</div>
-      <div><strong>Analytics:</strong> Tableau, Power BI, A/B Testing, KPI Dashboards</div>
+      <div><strong>Infrastructure:</strong> Airflow, DBT, Terraform, GitHub Actions, Docker, CloudWatch</div>
+      <div><strong>Analytics:</strong> Tableau, Power BI, KPI Dashboards, A/B Testing, Anomaly Detection</div>
     </div>
   </section>
 
@@ -61,10 +66,10 @@
       <h3>Senior Data Engineer @ Computational Group</h3>
       <span>Sept 2023 – Present | New York</span>
       <ul>
-        <li>Built scalable ETL pipelines using Python, SQL, and Spark, reducing pipeline failures by 40%.</li>
-        <li>Led enterprise-wide DBT pipelines with SCD2, lineage tracking, and testing frameworks.</li>
-        <li>Automated AWS Glue, Step Functions, and Lambda workflows, achieving 99% reliability.</li>
-        <li>Optimized Snowflake clustering, cutting BI dashboard latency by 35%.</li>
+        <li>Built scalable ETL pipelines with Python, SQL, Spark → reduced failures by 40%.</li>
+        <li>Automated AWS Glue, Step Functions & Lambda → 99% reliable orchestration.</li>
+        <li>Provisioned infra with Terraform & Boto3 → 80% faster setup.</li>
+        <li>Optimized Snowflake clustering → 35% faster BI dashboards.</li>
       </ul>
     </div>
 
@@ -72,40 +77,52 @@
       <h3>Data Engineer @ ZS Associates</h3>
       <span>Jan 2022 – Aug 2023 | New Jersey</span>
       <ul>
-        <li>Built Azure Data Factory + Synapse pipelines, improving latency by 30%.</li>
-        <li>Created reusable Terraform modules and CI/CD pipelines, cutting setup effort by 80%.</li>
-        <li>Developed dimensional models and Synapse warehouse, enabling faster reporting.</li>
+        <li>Built ADF + Synapse pipelines → 30% lower latency at TB scale.</li>
+        <li>Created reusable Terraform modules + GitHub Actions → 80% faster CI/CD.</li>
+        <li>Implemented DBT testing & Purview → governed pipelines, SOC-2 aligned.</li>
       </ul>
     </div>
 
     <div class="exp-card">
       <h3>Data Engineer @ Bain & Company</h3>
-      <span>July 2020 – Dec 2021 | New York</span>
+      <span>Jul 2020 – Dec 2021 | New York</span>
       <ul>
-        <li>Developed Spark anomaly detection pipelines with AWS Glue + Snowflake, boosting accuracy by 35%.</li>
-        <li>Automated AWS infra provisioning with Terraform, reducing costs by 30%.</li>
-        <li>Optimized Snowflake star schema models for financial analytics.</li>
+        <li>Developed Spark anomaly detection pipelines → +35% accuracy.</li>
+        <li>Automated AWS infra provisioning → 30% cost reduction.</li>
+        <li>Optimized Snowflake star schema → 20% fewer SLA breaches.</li>
       </ul>
     </div>
   </section>
 
   <!-- Projects -->
   <section id="projects">
-    <h2>Key Projects</h2>
+    <h2>Projects</h2>
     <div class="proj-grid">
       <div class="proj-card">
-        <h3>Real-Time Data Streaming</h3>
-        <p>Built Kafka + Spark Streaming pipelines enabling sub-minute ingestion of financial transactions with anomaly detection.</p>
+        <h3>Real-Time Streaming</h3>
+        <p>Kafka + Spark Streaming pipelines for financial transactions with anomaly detection (sub-minute latency).</p>
       </div>
       <div class="proj-card">
         <h3>Enterprise DBT Framework</h3>
-        <p>Led DBT pipelines across multiple domains with SCD2, testing, and lineage tracking, improving governance and reliability.</p>
+        <p>DBT pipelines with SCD2, lineage & testing across 50+ domains → improved governance & quality.</p>
       </div>
       <div class="proj-card">
         <h3>Healthcare Data Warehouse</h3>
-        <p>Designed dimensional models in Snowflake for claims & EMR data, supporting dashboards that reduced SLA breaches by 20%.</p>
+        <p>Snowflake dimensional models for EMR + claims data → dashboards reduced SLA breaches by 20%.</p>
       </div>
     </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Certified Data Analytics – Specialty</li>
+      <li>Google Cloud Professional Data Engineer</li>
+      <li>Microsoft Certified: Azure Data Engineer Associate</li>
+      <li>Snowflake SnowPro Core</li>
+      <li>dbt Fundamentals</li>
+    </ul>
   </section>
 
   <!-- Education -->
@@ -117,7 +134,9 @@
   <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>📍 New York | 📧 <a href="mailto:jaysingh2883@gmail.com">jaysingh2883@gmail.com</a> | ☎️ 516-435-7308</p>
+    <p>📍 New York</p>
+    <p>📧 <a href="mailto:jaysingh2883@gmail.com">jaysingh2883@gmail.com</a></p>
+    <p>☎️ 516-435-7308</p>
     <div class="social-links">
       <a href="https://github.com/japjot" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/japjot" target="_blank">LinkedIn</a>
