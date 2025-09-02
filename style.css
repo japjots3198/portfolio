@@ -25,9 +25,11 @@ nav a:hover { color: var(--primary); }
 section { padding: 4rem 2rem; max-width: 900px; margin: auto; }
 h2 { margin-bottom: 1.5rem; font-size: 1.8rem; color: var(--primary); }
 
-.hero { display: flex; justify-content: center; align-items: center; text-align: center; height: 90vh; }
-.hero-text h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+.hero { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 90vh; }
+.hero-text h2 { font-size: 2.5rem; margin: 1rem 0; }
 .hero-text .btn { background: var(--primary); color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; }
+
+.profile-img { width: 150px; border-radius: 50%; margin-bottom: 1rem; }
 
 .skills-grid, .proj-grid { display: grid; gap: 1rem; }
 .skills-grid { grid-template-columns: 1fr 1fr; }
