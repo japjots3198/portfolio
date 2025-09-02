@@ -11,8 +11,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
-
-body { background: var(--bg); color: var(--text); line-height: 1.6; }
+body { background: var(--bg); color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
 
 header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid #ddd; z-index: 100; }
 nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
@@ -22,20 +21,25 @@ nav a { text-decoration: none; color: var(--text); font-weight: 500; }
 nav a:hover { color: var(--primary); }
 #theme-toggle { border: none; background: none; cursor: pointer; font-size: 1.2rem; }
 
-section { padding: 4rem 2rem; max-width: 900px; margin: auto; }
+section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
 h2 { margin-bottom: 1.5rem; font-size: 1.8rem; color: var(--primary); }
+ul { margin-left: 1rem; }
 
 .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 90vh; }
-.hero-text h2 { font-size: 2.5rem; margin: 1rem 0; }
-.hero-text .btn { background: var(--primary); color: white; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; }
-
+.hero h2 { font-size: 2.2rem; margin: 1rem 0; }
+.hero h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 1.5rem; }
+.hero .btn, .btn-secondary { padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; margin: 0.5rem; }
+.hero .btn { background: var(--primary); color: white; }
+.hero .btn-secondary { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
 .profile-img { width: 150px; border-radius: 50%; margin-bottom: 1rem; }
 
-.skills-grid, .proj-grid { display: grid; gap: 1rem; }
-.skills-grid { grid-template-columns: 1fr 1fr; }
-.proj-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+.skill-card { padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: rgba(0,0,0,0.03); }
+[data-theme="dark"] .skill-card { background: rgba(255,255,255,0.05); }
 
 .exp-card, .proj-card { background: rgba(0,0,0,0.03); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
 [data-theme="dark"] .exp-card, [data-theme="dark"] .proj-card { background: rgba(255,255,255,0.05); }
 
-footer { text-align: center; padding: 2rem; border-top: 1px solid #ddd; }
+.proj-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+
+footer { text-align: center; padding: 2rem; border-top: 1px solid #ddd; margin-top: 2rem; }
